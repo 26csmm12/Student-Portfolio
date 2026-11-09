@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio showcasing profile, education, skills and feedback.">
+  <title>Student Portfolio | My Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">SP</span> Student<span>Portfolio</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#feedback">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> STUDENT PORTFOLIO</p>
+          <h1>Welcome to <span class="gradient-text">my website.</span></h1>
+          <p class="hero-lead">A student who enjoys learning, building projects and exploring technology.</p>
+          <p class="hero-description">Welcome to my personal portfolio. Here you can learn about my education, skills, interests and the work I'm proud to share.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#about">Explore my profile <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#feedback">Leave feedback</a>
+          </div>
+          <div class="hero-meta"><span>📍 Bengaluru, India</span><span>🎓 Computer Science Student</span></div>
+        </div>
+        <div class="hero-art" aria-label="Decorative student profile illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="avatar">NE</div>
+            <span class="profile-chip">✦ Always learning</span>
+            <h2>Nataraj Elangbam</h2>
+            <p>Student · Learner · Creator</p>
+            <div class="mini-stats"><div><strong>03+</strong><small>Interests</small></div><div><strong>∞</strong><small>Curiosity</small></div></div>
+          </div>
+          <span class="float-tag tag-code">&lt;/&gt; Code</span>
+          <span class="float-tag tag-star">✦ Creative</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span class="gradient-text">Me</span></h2>
+          <p>A little introduction to my academic journey and interests.</p>
+        </div>
+        <div class="about-grid">
+          <article class="panel about-intro">
+            <div class="panel-icon">✦</div>
+            <h3>Who I am</h3>
+            <p>I'm a student currently pursuing <strong>Bachelor of Science (Computer Science and Maths)</strong>. I enjoy developing my knowledge, learning new technologies and applying what I learn through practical projects.</p>
+            <p>My goal is to keep improving my skills, work collaboratively and build useful solutions.</p>
+          </article>
+          <div class="about-details">
+            <article class="panel detail-card"><span class="detail-icon">🎓</span><div><h3>Education</h3><p>B.Sc. – Computer Science, Maths</p><small>Kristu Jayanti (Deemed to be University)</small></div></article>
+            <article class="panel detail-card"><span class="detail-icon">💻</span><div><h3>Technical skills</h3><div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Database basics</span></div></div></article>
+            <article class="panel detail-card"><span class="detail-icon">🌱</span><div><h3>Interests</h3><p>Web development · Technology · Problem solving · Continuous learning</p></div></article>
+            <article class="panel detail-card"><span class="detail-icon">🏆</span><div><h3>Projects & achievements</h3><p>Add your completed projects, certificates, awards or academic achievements here.</p></div></article>
+          </div>
+        </div>
+        <p class="edit-note">Personalize this section with your real details before submitting your project.</p>
+      </div>
+    </section>
+
+    <section class="section feedback-section" id="feedback">
+      <div class="container feedback-grid">
+        <div class="feedback-copy">
+          <p class="eyebrow">YOUR OPINION MATTERS</p>
+          <h2>Share your <span class="gradient-text">feedback.</span></h2>
+          <p>Thank you for visiting my portfolio. Your suggestions help me improve this website and my work.</p>
+          <div class="feedback-points"><p>✓ Takes only a minute</p><p>✓ Your response is saved in the project database</p><p>✓ Please keep comments respectful</p></div>
+        </div>
+        <form class="panel feedback-form" id="feedbackForm">
+          <h3>Send a message</h3>
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" name="visitorName" type="text" placeholder="Enter your name" minlength="2" maxlength="60" required>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" maxlength="120" required>
+          <label for="rating">Your rating</label>
+          <select id="rating" name="rating" required>
+            <option value="">Choose a rating</option>
+            <option value="5">★★★★★ — Excellent</option>
+            <option value="4">★★★★ — Very good</option>
+            <option value="3">★★★ — Good</option>
+            <option value="2">★★ — Fair</option>
+            <option value="1">★ — Needs improvement</option>
+          </select>
+          <label for="message">Your feedback</label>
+          <textarea id="message" name="message" rows="4" minlength="5" maxlength="1000" placeholder="Write your suggestions here..." required></textarea>
+          <button class="button button-primary submit-button" type="submit">Submit feedback <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">SP</span> Student<span>Portfolio</span></a><p>Designed and developed as a student project · <span id="year"></span></p><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
